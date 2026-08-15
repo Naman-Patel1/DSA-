@@ -24,9 +24,7 @@ class Solution {
                 }
                 st++;
                 end--;
-                }
-
-                
+                }                
                 else if(sum<0){
                     st++;
                 }
