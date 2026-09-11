@@ -4,19 +4,19 @@ class Solution {
         int i=0;
         int j=2;
         int count=0;
-        while (j<n){
-            if(s.charAt(j)!=s.charAt(j-1) && s.charAt(j-1)!=s.charAt(i) && s.charAt(j)!= s.charAt(i)){
+
+        while(j<n && i<j){
+            if(s.charAt(j)!=s.charAt(j-1) && s.charAt(j)!=s.charAt(i) && s.charAt(j-1)!=s.charAt(i)){
                 count++;
-                j++;
                 i++;
+                j++;
             }
             else{
-                j++;
                 i++;
+                j++;
             }
         }
         return count;
 
-        
     }
 }
